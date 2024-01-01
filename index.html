@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search The Best Phone for you Here</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2819/PNG/512/search_mobile_phone_icon_179523.png"
+        type="image/x-icon">
+
+    <!-- Daisy Ui And Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-slate-50">
+    <header>
+    </header>
+
+    <main class="md:w-4/5 mx-auto">
+        <!-- Search section -->
+        <section id="search-container" class="grid">
+            <div class="join justify-end">
+                <input id="search-field" class="input input-bordered join-item w-1/2" placeholder="Search"
+                    value="iphone" />
+                <button class="btn btn-accent join-item w-1/6" id="search-button">Search</button>
+            </div>
+        </section>
+
+        <!-- Loading Section -->
+        <section>
+            <div id="loading" class="text-center mt-40 hidden">
+                <span class="loading loading-spinner loading-lg text-secondary"></span>
+
+            </div>
+        </section>
+
+        <!-- Display Section -->
+        <section id="phones-container" class="grid w-full md:grid-cols-2 lg:grid-cols-3  md:gap-x-10">
+
+        </section>
+        <!-- Show all Button section -->
+        <section class="mt-10">
+            <h3 class="text-2xl text-center" id="match-number"></h3>
+            <div class="join  w-full justify-center" id="show-all">
+
+            </div>
+        </section>
+        <!-- Show details modal -->
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="showDetailsModal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box grid grid-flow-row gap-y-6" id="show-modal-box">
+
+
+                </div>
+            </dialog>
+            <div class="text-2xl text-center my-10 font-extrabold">Page no <span id="page-no"
+                    class="font-semibold">1</span> </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Js codes -->
+    <script src="js/function.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
